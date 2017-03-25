@@ -1,0 +1,31 @@
+{
+  "name": "spgateway",
+  "description": "智付通 Spgateway Node.js module",
+  "version": "0.0.1",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onlinemad/node-spgateway.git"
+  },
+  "keywords": [
+    "spgateway"
+  ],
+  "author": "Ian Wu <onlinemad@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/onlinemad/node-spgateway/issues"
+  },
+  "homepage": "https://github.com/onlinemad/node-spgateway#readme",
+  "devDependencies": {
+    "chai": "^3.5.0"
+  },
+  "dependencies": {
+    "aes-js": "^3.0.0"
+  }
+}
