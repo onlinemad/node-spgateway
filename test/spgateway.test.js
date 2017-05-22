@@ -34,4 +34,17 @@ suite('spgateway', () => {
       assert.equal(Spgateway.checkvalue(key, iv, payload), '379BF1DB8948EE79D8ED77A1EBCB2F57B0FD45D0376B6DA9CF85F539CEF1C127')
     })
   })
+  suite('checkcode', () => {
+    test('should generate checkcode', () => {
+      let key = 'abcdefg'
+      let iv = '1234567'
+      let payload = {
+        MerchantOrderNo: '840f022',
+        MerchantID: '1422967',
+        Amt: 100,
+        TradeNo: '14061313541640927'
+      }
+      assert.equal(Spgateway.checkvalue(key, iv, payload), '157DF3A1113977D6322BEDA6F959DBF1CBD3A1E0381D7A989064B201CDE90502')
+    })
+  })
 })
