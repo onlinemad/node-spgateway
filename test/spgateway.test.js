@@ -48,5 +48,17 @@ suite('spgateway', () => {
       }
       assert.equal(Spgateway.checkcode(key, iv, payload), '62C687AF6409E46E79769FAF54F54FE7E75AAE50BAF0767752A5C337670B8EDB')
     })
+    test('should generate checkcode - application/x-www-form-urlencoded encoding case', () => {
+      let key = 'abcdefg'
+      let iv = '1234567'
+      let payload = {
+        MerchantID: 'ABC1422967',
+        Date: '2015-01-01 00:00:00',
+        UseInfo: 'ON',
+        CreditInst: 'ON',
+        CreditRed: 'ON'
+      }
+      assert.equal(Spgateway.checkcode(key, iv, payload), '77A1EF8F23C94CB63A60A7EDF99AC3E0F4688D96AF6D4B34370D306ABD33D0F6')
+    })
   })
 })
