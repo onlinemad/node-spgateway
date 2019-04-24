@@ -1,13 +1,13 @@
 {
   "name": "spgateway",
   "description": "智付通 Spgateway Node.js module",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
